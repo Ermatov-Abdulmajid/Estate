@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estate</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__container">
+
+      <a class="site-header__logo-wrapper" href="#">
+        <picture>
+          <source srcset="img/Logo-small.svg" media="(max-width:420px)" width="100" height="28">
+          <img class="site-header__logo logo" src="img/Logo.svg" alt="site-logo" width="160" height="48">
+        </picture>
+      </a>
+
+      <div class="site-header__inner">
+        <nav class="sitenav site-header__sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="index.html">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="about.html">About Us</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link sitenav__item--active" href="properties.html">
+                Properties
+              </a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="services.html">Services</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="site-header__menu-button" type="button">
+          <img class="site-header__menu" src="img/menu-icon.svg" alt="menu" width="28" height="28">
+        </button>
+
+        <button class="site-header__close-button" type="button">
+          <svg class="site-header__close-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="currentColor"/>
+          </svg>
+        </button>
+
+      </div>
+
+      <a class="site-header__button button" href="#">Contact Us</a>
+
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- PROPERTIES-HERO -->
+    <section class="properties-hero">
+      <div class="properties-hero__container container">
+        <div class="properties-hero__inner inner">
+          <h1 class="properties-hero__heading heading">Find Your Dream Property</h1>
+          <p class="properties-hero__info info">
+            Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTIES-FEATURES -->
+    <section class="properties-features">
+      <div class="properties-features__container container">
+        <div class="properties-features__inner inner">
+          <h2 class="properties-features__heading">Discover a World of Possibilities</h2>
+          <p class="properties-features__info info">
+            Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home
+          </p>
+        </div>
+
+        <div class="properties-features__list">
+          <!-- ITEM-1 -->
+          <div class="properties-features__item">
+            <img src="img/features-img-1.png" alt="" width="353" height="250" srcset="img/features-img-1.png 1x, img/features-img-1@2x.png 2x">
+            <span class="properties-features__item-span">
+              Coastal Escapes - Where Waves Beckon
+            </span>
+            <div class="properties-features__item-title">Seaside Serenity Villa</div>
+            <p class="properties-features__item-text">
+              Wake up to the soothing melody of waves. This beachfront villa offers... <a class="properties-features__item-link" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__container">
+        <img src="img/icon.svg" alt="" width="54" height="24">
+        <h2 class="cta__heading">Start Your Real Estate Journey Today</h2>
+        <div class="cta__inner">
+          <p class="cta__text">
+            Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.
+          </p>
+          <a class="cta__button small-button" href="properties.html">Explore Properties</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SITE-FOOTER -->
+  <footer class="site-footer">
+    <div class="container site-footer__container">
+      <div class="site-footer__inner">
+        <div class="site-footer__logo-input-wrapper">
+          <a class="site-footer__logo-wrapper" href="index.html">
+            <img class="site-footer__logo-icon" src="img/Logo.svg" alt="logo" width="113" height="34" draggable="false">
+          </a>
+          <form class="site-footer__form" action="https://htmlacademy.ru">
+            <input class="site-footer__input" type="email" placeholder="Enter Your Email" name="email">
+          </form>
+        </div>
+
+        <div class="site-footer__list-wrapper">
+
+          <div class="site-footer__list">
+            <span class="site-footer__list-title">Home</span>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Hero Section</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Features</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Properties</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Testimonials</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">FAQ's</a>
+            </div>
+          </div>
+
+          <div class="site-footer__list">
+            <span class="site-footer__list-title">About Us</span>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Our Story</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Our Works</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">How It Works</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Our Team</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Our Clients</a>
+            </div>
+          </div>
+
+          <div class="site-footer__list">
+            <span class="site-footer__list-title">Properties</span>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Portfolio</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Categories</a>
+            </div>
+          </div>
+
+          <div class="site-footer__list">
+            <span class="site-footer__list-title">Services</span>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Valuation Mastery</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Strategic Marketing</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Negotiation Wizardry</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Closing Success</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Property Management</a>
+            </div>
+          </div>
+
+          <div class="site-footer__list">
+            <span class="site-footer__list-title">Contact Us</span>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Contact Form</a>
+            </div>
+            <div class="site-footer__item">
+              <a class="site-footer__link" href="#">Our Offices</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SITE-FOOTER-BOTTOM -->
+    <div class="site-footer__bottom container">
+      <div class="site-footer__bottom-wrapper">
+        <div class="site-footer__bottom-inner">
+          <a class="site-footer__bottom-author" href="#">@2023 Estatein. All Rights Reserved.</a>
+          <a class="site-footer__bottom-text" href="#">Terms & Conditions</a>
+        </div>
+
+        <ul class="site-footer__bottom-list">
+          <li class="site-footer__bottom-item">
+            <a class="site-footer__bottom-item-a" href="#">
+              <img class="site-footer__bottom-icon" src="img/icon-facebook.svg" alt="icon-facebook" width="20" height="20" draggable="false">
+            </a>
+          </li>
+          <li class="site-footer__bottom-item">
+            <a class="site-footer__bottom-item-a" href="#">
+              <img class="site-footer__bottom-icon" src="img/icon-linkedin.svg" alt="icon-linkedin" width="20" height="20" draggable="false">
+            </a>
+          </li>
+          <li class="site-footer__bottom-item">
+            <a class="site-footer__bottom-item-a" href="#">
+              <img class="site-footer__bottom-icon" src="img/icon-twitter.svg" alt="icon-twitter" width="20" height="20" draggable="false">
+            </a>
+          </li>
+          <li class="site-footer__bottom-item">
+            <a class="site-footer__bottom-item-a" href="#">
+              <img class="site-footer__bottom-icon" src="img/icon-youtube.svg" alt="icon-youtube" width="20" height="20" draggable="false">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
