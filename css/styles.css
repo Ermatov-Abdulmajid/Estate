@@ -835,6 +835,7 @@ select:-webkit-autofill:focus {
     line-height: 21px;
     padding: 6px 12px;
     border-radius: 28px;
+    text-wrap: nowrap;
 }
 
 .properties-features__item-title {
