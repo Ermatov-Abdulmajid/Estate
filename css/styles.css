@@ -523,7 +523,7 @@ select:-webkit-autofill:focus {
 
 .estatein-team__icon-wrapper {
     position: absolute;
-    left: 111px;
+    left: calc(50% - 30px);
     bottom: 42%;
     display: flex;
     justify-content: center;
@@ -760,6 +760,7 @@ select:-webkit-autofill:focus {
 }
 
 .heading {
+    margin: 0;
     font-size: 38px;
     font-weight: 600;
     line-height: 57px;
@@ -769,6 +770,7 @@ select:-webkit-autofill:focus {
     color: var(--grey-color);
     font-size: 16px;
     line-height: 24px;
+    margin: 0 0 60px 0;
 }
 
 /* PROPERTIES-HERO */
@@ -794,6 +796,94 @@ select:-webkit-autofill:focus {
     margin: 0;
 }
 
+/* PROPERTIES-FEATURES */
+.properties-features__container {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.properties-features__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.properties-features__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 413px;
+    max-width: 413px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.properties-features__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.properties-features__item-img {
+    display: block;
+    width: 353px;
+    height: 250px;
+    margin-bottom: 24px;
+}
+
+.properties-features__item-span {
+    font-size: 14px;
+    background-color: var(--bg-header-color);
+    line-height: 21px;
+    padding: 6px 12px;
+    border-radius: 28px;
+}
+
+.properties-features__item-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 16px 0 4px 0;
+}
+
+.properties-features__item-text {
+    color: var(--grey-color);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.properties-features__item-link {
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
+/* ITEM-BOTTOM */
+.properties-features__item-bottom {
+    display: flex;
+    margin-top: 24px;
+}
+
+.properties-features__item-bottom-inner {
+    margin-right: 30px;
+}
+
+.properties-features__item-bottom-p {
+    margin: 0;
+    color: var(--grey-color);
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.properties-features__item-bottom-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.properties-features__item-bottom-link {
+    background-color: var(--accent-color);
+    text-align: center;
+    flex-grow: 1;
+}
 
 /* INDEX-HERO */
 .index-hero__container {
@@ -1501,6 +1591,61 @@ select:-webkit-autofill:focus {
 
 /* RESPONSIVE STYLES */
 @media only screen and (max-width: 1190px) {
+    /* PROPERTIES-HERO */
+    .properties-hero__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* PROPERTIES-FEATURES */
+    .properties-features__container {
+        padding-right: 60px;
+        padding-bottom: 60px;
+    }
+
+    .properties-features__item {
+        display: none;
+    }
+
+    .properties-features__item-active {
+        display: block;
+    }
+
+    .properties-features__list {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .properties-features__item:last-child {
+        margin-right: 0;
+    }
+
+    .properties-features__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .properties-features__bottom-buttons-wr2 {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+    .properties-features__bottom {
+        max-width: 413px;
+        border: none;
+        padding: 0;
+    }
+
+    .properties-features__bottom-buttons-wr2 {
+        margin-left: 0;
+    }
+
+    .properties-features__item:not(:last-child) {
+        margin-right: 0;
+    }
+
     /* ABOUT-CLIENTS */
     .about-clients__list {
         justify-content: center;
@@ -1586,7 +1731,6 @@ select:-webkit-autofill:focus {
 
     .estatein-team__icon-wrapper {
         top: 54%;
-        left: 41%;
     }
 
     .estatein-team__item-inner  {
@@ -1892,14 +2036,19 @@ select:-webkit-autofill:focus {
     }
 
     .features__item {
+        display: none;
         width: 100%;
         height: auto;
         max-width: 390px;
         margin-right: 0;
     }
 
-    .features__item--active {
-        display: flex;
+    .features__item-active {
+        display: block;
+    }
+
+    .features__item:not(:last-child) {
+        margin-right: 0;
     }
 
     .features__item-bottom-inner {
@@ -1912,7 +2061,7 @@ select:-webkit-autofill:focus {
 
     /* FEATURES-BOTTOM */
     .features__bottom {
-         display: flex;
+        display: flex;
         width: 100%;
         max-width: 357px;
         margin: 0 auto 0 auto;
