@@ -1,643 +1,865 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estate</title>
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estate</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap"
+      rel="stylesheet" />
 
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-  <header class="site-header">
-    <div class="container site-header__container">
-
-      <a class="site-header__logo-wrapper" href="#">
-        <picture>
-          <source srcset="img/Logo-small.svg" media="(max-width:420px)" width="100" height="28">
-          <img class="site-header__logo logo" src="img/Logo.svg" alt="site-logo" width="160" height="48">
-        </picture>
-      </a>
-
-      <div class="site-header__inner">
-        <nav class="sitenav site-header__sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="index.html">Home</a>
-            </li>
-            <li class="sitenav__item sitenav__item--active">
-              <a class="sitenav__link" href="about.html">About Us</a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="properties.html">Properties</a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="services.html">Services</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button class="site-header__menu-button" type="button">
-          <img class="site-header__menu" src="img/menu-icon.svg" alt="menu" width="28" height="28">
-        </button>
-
-        <button class="site-header__close-button" type="button">
-          <svg class="site-header__close-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="currentColor"/>
-          </svg>
-        </button>
-
-      </div>
-
-      <a class="site-header__button button" href="#">Contact Us</a>
-
-    </div>
-  </header>
-
-  <main class="main-content">
-
-    <!-- ABOUT-HERO -->
-    <section class="about-hero">
-      <div class="container about-hero__container">
-        <div class="about-hero__inner">
-          <img src="img/icon.svg" alt=""  >
-          <h1 class="about-hero__heading">Our Journey</h1>
-          <p class="about-hero__text">
-            Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.
-          </p>
-
-          <!-- ABOUT-HERO__LIST -->
-          <ul class="index-hero__list">
-            <li class="about-hero__item index-hero__item">
-              <h2 class="index-hero__item-heading">200+</h2>
-              <p class="index-hero__item-p">Happy Customers</p>
-            </li>
-            <li class="about-hero__item index-hero__item">
-              <h2 class="index-hero__item-heading">10k+</h2>
-              <p class="index-hero__item-p">Properties For Clients</p>
-            </li>
-            <li class="about-hero__item index-hero__item">
-              <h2 class="index-hero__item-heading">16+</h2>
-              <p class="index-hero__item-p">Years of Experience</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="about-hero__img-wrapper">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__container">
+        <a class="site-header__logo-wrapper" href="#">
           <picture>
-            <source srcset="img/hero-img-phone.png 1x, img/hero-img-phone@2x.png 2x" media="(max-width:550px)" width="358" height="310">
-            <img class="about-hero__img" src="img/hero-img.jpg" alt="about-hero-img" width="610" height="435" srcset="img/hero-img.jpg 1x, img/hero-img@2x.jpg 2x">
+            <source
+              srcset="img/Logo-small.svg"
+              media="(max-width:420px)"
+              width="100"
+              height="28" />
+            <img
+              class="site-header__logo logo"
+              src="img/Logo.svg"
+              alt="site-logo"
+              width="160"
+              height="48" />
           </picture>
+        </a>
+
+        <div class="site-header__inner">
+          <nav class="sitenav site-header__sitenav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="index.html">Home</a>
+              </li>
+              <li class="sitenav__item sitenav__item--active">
+                <a class="sitenav__link" href="about.html">About Us</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="properties.html">Properties</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="services.html">Services</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="site-header__menu-button" type="button">
+            <img
+              class="site-header__menu"
+              src="img/menu-icon.svg"
+              alt="menu"
+              width="28"
+              height="28" />
+          </button>
+
+          <button class="site-header__close-button" type="button">
+            <svg
+              class="site-header__close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                fill="currentColor" />
+            </svg>
+          </button>
         </div>
+
+        <a class="site-header__button button" href="#">Contact Us</a>
       </div>
-    </section>
+    </header>
 
-    <section class="about-values">
-      <div class="about-values__container container">
-        <div class="about-values__inner">
-          <img class="about-values__icon" src="img/icon.svg" alt="icon" width="54" height="24">
-          <h2 class="about-values__heading">Our Values</h2>
-          <p class="about-values__info">
-            Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
-          </p>
-        </div>
+    <main class="main-content">
+      <!-- ABOUT-HERO -->
+      <section class="about-hero">
+        <div class="container about-hero__container">
+          <div class="about-hero__inner">
+            <img src="img/icon.svg" alt="" />
+            <h1 class="about-hero__heading">Our Journey</h1>
+            <p class="about-hero__text">
+              Our story is one of continuous growth and evolution. We started as
+              a small team with big dreams, determined to create a real estate
+              platform that transcended the ordinary. Over the years, we've
+              expanded our reach, forged valuable partnerships, and gained the
+              trust of countless clients.
+            </p>
 
-        <!-- ABOUT-VALUES__LIST -->
-        <div class="about-values__list">
-          <div class="about-values__items-wrapper">
-            <div class="about-values__item">
-              <div class="about-values__item-inner">
-                <div class="about-values__item-icon-wrapper">
-                  <img class="about-values__item-icon" src="img/icon-star-purple.svg" alt="icon-star-purple" width="28" height="28">
-                </div>
-                <span class="about-values__item-heading">Trust</span>
-              </div>
-              <p class="about-values__item-info">
-                Trust is the cornerstone of every successful real estate transaction.
-              </p>
-            </div>
-
-            <div class="about-values__item">
-              <div class="about-values__item-inner">
-                <div class="about-values__item-icon-wrapper"><img class="about-values__item-icon" src="img/excellence-icon.svg" alt="excellence-icon" width="28" height="28"></div>
-                <span class="about-values__item-heading">Excellence</span>
-              </div>
-              <p class="about-values__item-info">
-                We set the bar high for ourselves. From the properties we list to the services.
-              </p>
-            </div>
+            <!-- ABOUT-HERO__LIST -->
+            <ul class="index-hero__list">
+              <li class="about-hero__item index-hero__item">
+                <h2 class="index-hero__item-heading">200+</h2>
+                <p class="index-hero__item-p">Happy Customers</p>
+              </li>
+              <li class="about-hero__item index-hero__item">
+                <h2 class="index-hero__item-heading">10k+</h2>
+                <p class="index-hero__item-p">Properties For Clients</p>
+              </li>
+              <li class="about-hero__item index-hero__item">
+                <h2 class="index-hero__item-heading">16+</h2>
+                <p class="index-hero__item-p">Years of Experience</p>
+              </li>
+            </ul>
           </div>
 
-          <div class="about-values__items-wrapper2">
-            <div class="about-values__item">
-              <div class="about-values__item-inner">
-                <div class="about-values__item-icon-wrapper">
-                  <img class="about-values__item-icon" src="img/clients-icon.svg" alt="about-clients-icon" width="28" height="28">
-                </div>
-                <span class="about-values__item-heading">Client-Centric</span>
-              </div>
-              <p class="about-values__item-info">
-                Your dreams and needs are at the center of our universe. We listen, understand.
-              </p>
-            </div>
+          <div class="about-hero__img-wrapper">
+            <picture>
+              <source
+                srcset="img/hero-img-phone.png 1x, img/hero-img-phone@2x.png 2x"
+                media="(max-width:550px)"
+                width="358"
+                height="310" />
+              <img
+                class="about-hero__img"
+                src="img/hero-img.jpg"
+                alt="about-hero-img"
+                width="610"
+                height="435"
+                srcset="img/hero-img.jpg 1x, img/hero-img@2x.jpg 2x" />
+            </picture>
+          </div>
+        </div>
+      </section>
 
-            <div class="about-values__item">
-              <div class="about-values__item-inner">
-                <div class="about-values__item-icon-wrapper">
-                  <img class="about-values__item-icon" src="img/icon-star-purple.svg" alt="icon-commitment" width="28" height="28">
-                </div>
-                <span class="about-values__item-heading">
-                  Our Commitment
-                </span>
-              </div>
-              <p class="about-values__item-info">
-                We are dedicated to providing you with the highest level of service, support.
-              </p>
-            </div>
+      <section class="about-values">
+        <div class="about-values__container container">
+          <div class="about-values__inner">
+            <img
+              class="about-values__icon"
+              src="img/icon.svg"
+              alt="icon"
+              width="54"
+              height="24" />
+            <h2 class="about-values__heading">Our Values</h2>
+            <p class="about-values__info">
+              Our story is one of continuous growth and evolution. We started as
+              a small team with big dreams, determined to create a real estate
+              platform that transcended the ordinary.
+            </p>
           </div>
 
+          <!-- ABOUT-VALUES__LIST -->
+          <div class="about-values__list">
+            <div class="about-values__items-wrapper">
+              <div class="about-values__item">
+                <div class="about-values__item-inner">
+                  <div class="about-values__item-icon-wrapper">
+                    <img
+                      class="about-values__item-icon"
+                      src="img/icon-star-purple.svg"
+                      alt="icon-star-purple"
+                      width="28"
+                      height="28" />
+                  </div>
+                  <span class="about-values__item-heading">Trust</span>
+                </div>
+                <p class="about-values__item-info">
+                  Trust is the cornerstone of every successful real estate
+                  transaction.
+                </p>
+              </div>
+
+              <div class="about-values__item">
+                <div class="about-values__item-inner">
+                  <div class="about-values__item-icon-wrapper">
+                    <img
+                      class="about-values__item-icon"
+                      src="img/excellence-icon.svg"
+                      alt="excellence-icon"
+                      width="28"
+                      height="28" />
+                  </div>
+                  <span class="about-values__item-heading">Excellence</span>
+                </div>
+                <p class="about-values__item-info">
+                  We set the bar high for ourselves. From the properties we list
+                  to the services.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-values__items-wrapper2">
+              <div class="about-values__item">
+                <div class="about-values__item-inner">
+                  <div class="about-values__item-icon-wrapper">
+                    <img
+                      class="about-values__item-icon"
+                      src="img/clients-icon.svg"
+                      alt="about-clients-icon"
+                      width="28"
+                      height="28" />
+                  </div>
+                  <span class="about-values__item-heading">Client-Centric</span>
+                </div>
+                <p class="about-values__item-info">
+                  Your dreams and needs are at the center of our universe. We
+                  listen, understand.
+                </p>
+              </div>
+
+              <div class="about-values__item">
+                <div class="about-values__item-inner">
+                  <div class="about-values__item-icon-wrapper">
+                    <img
+                      class="about-values__item-icon"
+                      src="img/icon-star-purple.svg"
+                      alt="icon-commitment"
+                      width="28"
+                      height="28" />
+                  </div>
+                  <span class="about-values__item-heading">
+                    Our Commitment
+                  </span>
+                </div>
+                <p class="about-values__item-info">
+                  We are dedicated to providing you with the highest level of
+                  service, support.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ABOUT-ACHIEVEMENTS -->
-    <section class="about-achievements">
-      <div class="container achievements__container">
-        <div class="about-achievements__inner">
-          <img class="about-values__icon" src="img/icon.svg" alt="icon" width="54" height="24">
-          <h3 class="about-achievements__heading">Our Achievements</h3>
-          <p class="about-achievements__info">
-            Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
-          </p>
+      <!-- ABOUT-ACHIEVEMENTS -->
+      <section class="about-achievements">
+        <div class="container achievements__container">
+          <div class="about-achievements__inner">
+            <img
+              class="about-values__icon"
+              src="img/icon.svg"
+              alt="icon"
+              width="54"
+              height="24" />
+            <h3 class="about-achievements__heading">Our Achievements</h3>
+            <p class="about-achievements__info">
+              Our story is one of continuous growth and evolution. We started as
+              a small team with big dreams, determined to create a real estate
+              platform that transcended the ordinary.
+            </p>
+          </div>
+
+          <ul class="about-achievements__list">
+            <li class="about-achievements__item">
+              <span class="about-achievements__item-title"
+                >3+ Years of Excellence</span
+              >
+              <p class="about-achievements__item-info">
+                With over 3 years in the industry, we've amassed a wealth of
+                knowledge and experience.
+              </p>
+            </li>
+
+            <li class="about-achievements__item">
+              <span class="about-achievements__item-title">Happy Clients</span>
+              <p class="about-achievements__item-info">
+                Our greatest achievement is the satisfaction of our clients.
+                Their success stories fuel our passion for what we do.
+              </p>
+            </li>
+
+            <li class="about-achievements__item">
+              <span class="about-achievements__item-title"
+                >Industry Recognition</span
+              >
+              <p class="about-achievements__item-info">
+                We've earned the respect of our peers and industry leaders, with
+                accolades and awards that reflect our commitment to excellence.
+              </p>
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <ul class="about-achievements__list">
-          <li class="about-achievements__item">
-            <span class="about-achievements__item-title">3+ Years of Excellence</span>
-            <p class="about-achievements__item-info">
-              With over 3 years in the industry, we've amassed a wealth of knowledge and experience.
+      <!-- ABOUT-EXPERIENCE -->
+      <section class="about-experience">
+        <div class="about-experience__container container">
+          <img src="img/icon.svg" alt="icon" width="54" height="24" />
+          <div class="about-experience__inner">
+            <h4 class="about-experience__title">
+              Navigating the Estatein Experience
+            </h4>
+            <p class="about-experience__text">
+              At Estatein, we've designed a straightforward process to help you
+              find and purchase your dream property with ease. Here's a
+              step-by-step guide to how it all works.
             </p>
-          </li>
+          </div>
 
-          <li class="about-achievements__item">
-            <span class="about-achievements__item-title">Happy Clients</span>
-            <p class="about-achievements__item-info">
-              Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.
-            </p>
-          </li>
+          <div class="about-experience__list-wrapper">
+            <div class="about-experience__list">
+              <!-- ITEM-1 -->
+              <div class="about-experience__item">
+                <div class="about-experience__step-wrapper">
+                  <span class="about-experience__item-step-text">Step 01</span>
+                </div>
+                <div class="about-experience__item-inner">
+                  <div class="about-experience__item-title">
+                    Discover a World of Possibilities
+                  </div>
+                  <p class="about-experience__item-info">
+                    Your journey begins with exploring our carefully curated
+                    property listings. Use our intuitive search tools to filter
+                    properties based on your preferences, including location,
+                  </p>
+                </div>
+              </div>
 
-          <li class="about-achievements__item">
-            <span class="about-achievements__item-title">Industry Recognition</span>
-            <p class="about-achievements__item-info">
-              We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.
-            </p>
-          </li>
+              <!-- ITEM-2 -->
+              <div class="about-experience__item">
+                <div class="about-experience__step-wrapper">
+                  <span class="about-experience__item-step-text">Step 02</span>
+                </div>
+                <div class="about-experience__item-inner">
+                  <div class="about-experience__item-title">
+                    Narrowing Down Your Choices
+                  </div>
+                  <p class="about-experience__item-info">
+                    Once you've found properties that catch your eye, save them
+                    to your account or make a shortlist. This allows you to
+                    compare and revisit your favorites as you make your
+                    decision.
+                  </p>
+                </div>
+              </div>
 
-        </ul>
-      </div>
-    </section>
+              <!-- ITEM-3 -->
+              <div class="about-experience__item">
+                <div class="about-experience__step-wrapper">
+                  <span class="about-experience__item-step-text">Step 03</span>
+                </div>
+                <div class="about-experience__item-inner">
+                  <div class="about-experience__item-title">
+                    Personalized Guidance
+                  </div>
+                  <p class="about-experience__item-info">
+                    Have questions about a property or need more information?
+                    Our dedicated team of real estate experts is just a call or
+                    message away.
+                  </p>
+                </div>
+              </div>
 
-    <!-- ABOUT-EXPERIENCE -->
-    <section class="about-experience">
-      <div class="about-experience__container container">
-        <img src="img/icon.svg" alt="icon" width="54" height="24">
-        <div class="about-experience__inner">
-          <h4 class="about-experience__title">
-            Navigating the Estatein Experience
-          </h4>
-          <p class="about-experience__text">
-            At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.
-          </p>
+              <!-- ITEM-4 -->
+              <div class="about-experience__item">
+                <div class="about-experience__step-wrapper">
+                  <span class="about-experience__item-step-text">Step 04</span>
+                </div>
+                <div class="about-experience__item-inner">
+                  <div class="about-experience__item-title">
+                    See It for Yourself
+                  </div>
+                  <p class="about-experience__item-info">
+                    Arrange viewings of the properties you're interested in.
+                    We'll coordinate with the property owners and accompany you
+                    to ensure you get a firsthand look at your potential new
+                    home.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM-5 -->
+              <div class="about-experience__item">
+                <div class="about-experience__step-wrapper">
+                  <span class="about-experience__item-step-text">Step 05</span>
+                </div>
+                <div class="about-experience__item-inner">
+                  <div class="about-experience__item-title">
+                    Making Informed Decisions
+                  </div>
+                  <p class="about-experience__item-info">
+                    Before making an offer, our team will assist you with due
+                    diligence, including property inspections, legal checks, and
+                    market analysis. We want you to be fully informed.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM-6 -->
+              <div class="about-experience__item">
+                <div class="about-experience__step-wrapper">
+                  <span class="about-experience__item-step-text">Step 06</span>
+                </div>
+                <div class="about-experience__item-inner">
+                  <div class="about-experience__item-title">
+                    Getting the Best Deal
+                  </div>
+                  <p class="about-experience__item-info">
+                    We'll help you negotiate the best terms and prepare your
+                    offer. Our goal is to secure the property at the right price
+                    and on favorable terms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="about-experience__list-wrapper">
-          <div class="about-experience__list">
+      <!-- ESTATEIN-TEAM -->
+      <section class="estatein-team">
+        <div class="estatein-team__container container">
+          <div class="estatein-team__inner">
+            <h4 class="estatein-team__title">Meet the Estatein Team</h4>
+            <p class="estatein-team__text">
+              At Estatein, our success is driven by the dedication and expertise
+              of our team. Get to know the people behind our mission to make
+              your real estate dreams a reality.
+            </p>
+          </div>
+
+          <div class="estatein-team__list">
             <!-- ITEM-1 -->
-            <div class="about-experience__item">
-              <div class="about-experience__step-wrapper">
-                <span class="about-experience__item-step-text">Step 01</span>
+            <div class="estatein-team__item">
+              <img
+                class="estatein-team__image"
+                src="img/max-mitchel.png"
+                alt=""
+                width="257"
+                height="220"
+                draggable="false"
+                srcset="img/max-mitchel.png 1x, img/max-mitchel@2x.png 2x" />
+              <a class="estatein-team__icon-wrapper" href="#">
+                <img
+                  class="estatein-team__icon"
+                  src="img/twittter.svg"
+                  alt="icon-twitter"
+                  width="20"
+                  height="20"
+                  draggable="false" />
+              </a>
+              <div class="estatein-team__item-name">Max Mitchell</div>
+              <span class="estatein-team__item-rank">Founder</span>
+
+              <div class="estatein-team__item-inner">
+                <span class="estatein-team__item-text">Say Hello 👋</span>
+                <button class="estatein-team__item-icon2-wrapper" type="button">
+                  <img
+                    class="estatein-team__item-icon2"
+                    src="img/send-icon.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    draggable="false" />
+                </button>
               </div>
-              <div class="about-experience__item-inner">
-                <div class="about-experience__item-title">
-                  Discover a World of Possibilities
+            </div>
+
+            <!-- ITEM-2 -->
+            <div class="estatein-team__item">
+              <img
+                class="estatein-team__image"
+                src="img/sarah-johnson.png"
+                alt=""
+                width="257"
+                height="220"
+                draggable="false"
+                srcset="
+                  img/sarah-johnson.png    1x,
+                  img/sarah-johnson@2x.png 2x
+                " />
+              <a class="estatein-team__icon-wrapper" href="#">
+                <img
+                  class="estatein-team__icon"
+                  src="img/twittter.svg"
+                  alt="icon-twitter"
+                  width="20"
+                  height="20"
+                  draggable="false" />
+              </a>
+              <div class="estatein-team__item-name">Sarah Johnson</div>
+              <span class="estatein-team__item-rank"
+                >Chief Real Estate Officer</span
+              >
+
+              <div class="estatein-team__item-inner">
+                <span class="estatein-team__item-text">Say Hello 👋</span>
+                <button class="estatein-team__item-icon2-wrapper" type="button">
+                  <img
+                    class="estatein-team__item-icon2"
+                    src="img/send-icon.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    draggable="false" />
+                </button>
+              </div>
+            </div>
+
+            <!-- ITEM-3 -->
+            <div class="estatein-team__item">
+              <img
+                class="estatein-team__image"
+                src="img/david-brown.png"
+                alt=""
+                width="257"
+                height="220"
+                draggable="false"
+                srcset="img/david-brown.png 1x, img/david-brown@2x.png 2x" />
+              <a class="estatein-team__icon-wrapper" href="#">
+                <img
+                  class="estatein-team__icon"
+                  src="img/twittter.svg"
+                  alt="icon-twitter"
+                  width="20"
+                  height="20"
+                  draggable="false" />
+              </a>
+              <div class="estatein-team__item-name">David Brown</div>
+              <span class="estatein-team__item-rank"
+                >Head of Property Management</span
+              >
+
+              <div class="estatein-team__item-inner">
+                <span class="estatein-team__item-text">Say Hello 👋</span>
+                <button class="estatein-team__item-icon2-wrapper" type="button">
+                  <img
+                    class="estatein-team__item-icon2"
+                    src="img/send-icon.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    draggable="false" />
+                </button>
+              </div>
+            </div>
+
+            <!-- ITEM-4 -->
+            <div class="estatein-team__item">
+              <img
+                class="estatein-team__image"
+                src="img/machael-turner.png"
+                alt=""
+                width="257"
+                height="220"
+                draggable="false"
+                srcset="
+                  img/machael-turner.png    1x,
+                  img/machael-turner@2x.png 2x
+                " />
+              <a class="estatein-team__icon-wrapper" href="#">
+                <img
+                  class="estatein-team__icon"
+                  src="img/twittter.svg"
+                  alt="icon-twitter"
+                  width="20"
+                  height="20"
+                  draggable="false" />
+              </a>
+              <div class="estatein-team__item-name">Michael Turner</div>
+              <span class="estatein-team__item-rank">Legal Counsel</span>
+
+              <div class="estatein-team__item-inner">
+                <span class="estatein-team__item-text">Say Hello 👋</span>
+                <button class="estatein-team__item-icon2-wrapper" type="button">
+                  <img
+                    class="estatein-team__item-icon2"
+                    src="img/send-icon.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    draggable="false" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT-CLIENTS -->
+      <section class="about-clients">
+        <div class="about-clients__container container">
+          <div class="about-clients__inner">
+            <img src="img/icon.svg" alt="" width="54" height="24" />
+            <h4 class="about-clients__title">Our Valued Clients</h4>
+            <p class="about-clients__text">
+              At Estatein, we have had the privilege of working with a diverse
+              range of clients across various industries. Here are some of the
+              clients we've had the pleasure of serving
+            </p>
+          </div>
+
+          <div class="about-clients__list">
+            <!-- ITEM-1 -->
+            <div class="about-clients__item">
+              <div class="about-clients__item-wrapper">
+                <div class="about-clients__item-inner">
+                  <p class="about-clients__item-text-grey">Since 2019</p>
+                  <div class="about-clients__item-heading">ABC Corporation</div>
                 </div>
-                <p class="about-experience__item-info">
-                  Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location,
+                <a
+                  class="about-clients__item-link button small-button"
+                  href="#">
+                  Visit Website
+                </a>
+              </div>
+
+              <div class="about-clients__item-wrapper">
+                <div class="about-clients__item-wrapper2">
+                  <div class="about-clients__item-smaller-text">Domain</div>
+                  <div class="about-clients__item-text">
+                    Commercial Real Estate
+                  </div>
+                </div>
+                <div class="about-clients__item-wrapper2">
+                  <div
+                    class="about-clients__item-smaller-text about-clients__item-smaller-text2">
+                    Category
+                  </div>
+                  <div class="about-clients__item-text">
+                    Luxury Home Development
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-clients__item-comment-wr">
+                <span class="about-clienst__heading">What They Said 🤗</span>
+                <p class="about-clients__comment">
+                  Estatein's expertise in finding the perfect office space for
+                  our expanding operations was invaluable. They truly understand
+                  our business needs.
                 </p>
               </div>
             </div>
 
             <!-- ITEM-2 -->
-            <div class="about-experience__item">
-              <div class="about-experience__step-wrapper">
-                <span class="about-experience__item-step-text">Step 02</span>
-              </div>
-              <div class="about-experience__item-inner">
-                <div class="about-experience__item-title">
-                  Narrowing Down Your Choices
+            <div class="about-clients__item">
+              <div class="about-clients__item-wrapper">
+                <div class="about-clients__item-inner">
+                  <p class="about-clients__item-text-grey">Since 2018</p>
+                  <div class="about-clients__item-heading">
+                    GreenTech Enterprises
+                  </div>
                 </div>
-                <p class="about-experience__item-info">
-                  Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.
-                </p>
+                <a
+                  class="about-clients__item-link button small-button"
+                  href="#">
+                  Visit Website
+                </a>
               </div>
-            </div>
-
-            <!-- ITEM-3 -->
-            <div class="about-experience__item">
-              <div class="about-experience__step-wrapper">
-                <span class="about-experience__item-step-text">Step 03</span>
-              </div>
-              <div class="about-experience__item-inner">
-                <div class="about-experience__item-title">
-                  Personalized Guidance
+              <div class="about-clients__item-wrapper">
+                <div class="about-clients__item-wrapper2">
+                  <div class="about-clients__item-smaller-text">Domain</div>
+                  <div class="about-clients__item-text">
+                    Commercial Real Estate
+                  </div>
                 </div>
-                <p class="about-experience__item-info">
-                  Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-experience__list">
-            <!-- ITEM-1 -->
-            <div class="about-experience__item">
-              <div class="about-experience__step-wrapper">
-                <span class="about-experience__item-step-text">Step 04</span>
-              </div>
-              <div class="about-experience__item-inner">
-                <div class="about-experience__item-title">
-                  See It for Yourself
+                <div class="about-clients__item-wrapper2">
+                  <div
+                    class="about-clients__item-smaller-text about-clients__item-smaller-text2">
+                    Category
+                  </div>
+                  <div class="about-clients__item-text">Retail Space</div>
                 </div>
-                <p class="about-experience__item-info">
-                  Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.
-                </p>
               </div>
-            </div>
-
-            <!-- ITEM-2 -->
-            <div class="about-experience__item">
-              <div class="about-experience__step-wrapper">
-                <span class="about-experience__item-step-text">Step 05</span>
-              </div>
-              <div class="about-experience__item-inner">
-                <div class="about-experience__item-title">
-                  Making Informed Decisions
-                </div>
-                <p class="about-experience__item-info">
-                  Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed.
-                </p>
-              </div>
-            </div>
-
-            <!-- ITEM-3 -->
-            <div class="about-experience__item">
-              <div class="about-experience__step-wrapper">
-                <span class="about-experience__item-step-text">Step 06</span>
-              </div>
-              <div class="about-experience__item-inner">
-                <div class="about-experience__item-title">
-                  Getting the Best Deal
-                </div>
-                <p class="about-experience__item-info">
-                  We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.
+              <div class="about-clients__item-comment-wr">
+                <span class="about-clienst__heading">What They Said 🤗</span>
+                <p class="about-clients__comment">
+                  Estatein's ability to identify prime retail locations helped
+                  us expand our brand presence. They are a trusted partner in
+                  our growth.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container cta__container">
+          <img src="img/icon.svg" alt="" width="54" height="24" />
+          <h2 class="cta__heading">Start Your Real Estate Journey Today</h2>
+          <div class="cta__inner">
+            <p class="cta__text">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+            <a class="cta__button small-button" href="properties.html"
+              >Explore Properties</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE-FOOTER -->
+    <footer class="site-footer">
+      <div class="container site-footer__container">
+        <div class="site-footer__inner">
+          <div class="site-footer__logo-input-wrapper">
+            <a class="site-footer__logo-wrapper" href="index.html">
+              <img
+                class="site-footer__logo-icon"
+                src="img/Logo.svg"
+                alt="logo"
+                width="113"
+                height="34"
+                draggable="false" />
+            </a>
+            <form class="site-footer__form" action="https://htmlacademy.ru">
+              <input
+                class="site-footer__input"
+                type="email"
+                placeholder="Enter Your Email"
+                name="email" />
+            </form>
+          </div>
+
+          <div class="site-footer__list-wrapper">
+            <div class="site-footer__list">
+              <span class="site-footer__list-title">Home</span>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Hero Section</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Features</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Properties</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Testimonials</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">FAQ's</a>
+              </div>
+            </div>
+
+            <div class="site-footer__list">
+              <span class="site-footer__list-title">About Us</span>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Our Story</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Our Works</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">How It Works</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Our Team</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Our Clients</a>
+              </div>
+            </div>
+
+            <div class="site-footer__list">
+              <span class="site-footer__list-title">Properties</span>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Portfolio</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Categories</a>
+              </div>
+            </div>
+
+            <div class="site-footer__list">
+              <span class="site-footer__list-title">Services</span>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Valuation Mastery</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Strategic Marketing</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Negotiation Wizardry</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Closing Success</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Property Management</a>
+              </div>
+            </div>
+
+            <div class="site-footer__list">
+              <span class="site-footer__list-title">Contact Us</span>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Contact Form</a>
+              </div>
+              <div class="site-footer__item">
+                <a class="site-footer__link" href="#">Our Offices</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!-- ESTATEIN-TEAM -->
-    <section class="estatein-team">
-      <div class="estatein-team__container container">
-        <div class="estatein-team__inner">
-          <h4 class="estatein-team__title">
-            Meet the Estatein Team
-          </h4>
-          <p class="estatein-team__text">
-            At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.
-          </p>
-        </div>
-
-        <div class="estatein-team__list">
-          <!-- ITEM-1 -->
-          <div class="estatein-team__item">
-            <img class="estatein-team__image" src="img/max-mitchel.png" alt="" width="257" height="220" draggable="false" srcset="img/max-mitchel.png 1x, img/max-mitchel@2x.png 2x">
-            <a class="estatein-team__icon-wrapper" href="#">
-              <img class="estatein-team__icon" src="img/twittter.svg" alt="icon-twitter" width="20" height="20" draggable="false">
-            </a>
-            <div class="estatein-team__item-name">Max Mitchell</div>
-            <span class="estatein-team__item-rank">Founder</span>
-
-            <div class="estatein-team__item-inner">
-              <span class="estatein-team__item-text">Say Hello 👋</span>
-              <button class="estatein-team__item-icon2-wrapper" type="button">
-                <img class="estatein-team__item-icon2" src="img/send-icon.svg" alt="" width="20" height="20" draggable="false">
-              </button>
-            </div>
+      <!-- SITE-FOOTER-BOTTOM -->
+      <div class="site-footer__bottom container">
+        <div class="site-footer__bottom-wrapper">
+          <div class="site-footer__bottom-inner">
+            <a class="site-footer__bottom-author" href="#"
+              >@2023 Estatein. All Rights Reserved.</a
+            >
+            <a class="site-footer__bottom-text" href="#">Terms & Conditions</a>
           </div>
 
-          <!-- ITEM-2 -->
-          <div class="estatein-team__item">
-            <img class="estatein-team__image" src="img/sarah-johnson.png" alt="" width="257" height="220" draggable="false" srcset="img/sarah-johnson.png 1x, img/sarah-johnson@2x.png 2x">
-            <a class="estatein-team__icon-wrapper" href="#">
-              <img class="estatein-team__icon" src="img/twittter.svg" alt="icon-twitter" width="20" height="20" draggable="false">
-            </a>
-            <div class="estatein-team__item-name">Sarah Johnson</div>
-            <span class="estatein-team__item-rank">Chief Real Estate Officer</span>
-
-            <div class="estatein-team__item-inner">
-              <span class="estatein-team__item-text">Say Hello 👋</span>
-              <button class="estatein-team__item-icon2-wrapper" type="button">
-                <img class="estatein-team__item-icon2" src="img/send-icon.svg" alt="" width="20" height="20" draggable="false">
-              </button>
-            </div>
-          </div>
-
-          <!-- ITEM-3 -->
-          <div class="estatein-team__item">
-            <img class="estatein-team__image" src="img/david-brown.png" alt="" width="257" height="220" draggable="false" srcset="img/david-brown.png 1x, img/david-brown@2x.png 2x">
-            <a class="estatein-team__icon-wrapper" href="#">
-              <img class="estatein-team__icon" src="img/twittter.svg" alt="icon-twitter" width="20" height="20" draggable="false">
-            </a>
-            <div class="estatein-team__item-name">David Brown</div>
-            <span class="estatein-team__item-rank">Head of Property Management</span>
-
-            <div class="estatein-team__item-inner">
-              <span class="estatein-team__item-text">Say Hello 👋</span>
-              <button class="estatein-team__item-icon2-wrapper" type="button">
-                <img class="estatein-team__item-icon2" src="img/send-icon.svg" alt="" width="20" height="20" draggable="false">
-              </button>
-            </div>
-          </div>
-
-          <!-- ITEM-4 -->
-          <div class="estatein-team__item">
-            <img class="estatein-team__image" src="img/machael-turner.png" alt="" width="257" height="220" draggable="false" srcset="img/machael-turner.png 1x, img/machael-turner@2x.png 2x">
-            <a class="estatein-team__icon-wrapper" href="#">
-              <img class="estatein-team__icon" src="img/twittter.svg" alt="icon-twitter" width="20" height="20" draggable="false">
-            </a>
-            <div class="estatein-team__item-name">Michael Turner</div>
-            <span class="estatein-team__item-rank">Legal Counsel</span>
-
-            <div class="estatein-team__item-inner">
-              <span class="estatein-team__item-text">Say Hello 👋</span>
-              <button class="estatein-team__item-icon2-wrapper" type="button">
-                <img class="estatein-team__item-icon2" src="img/send-icon.svg" alt="" width="20" height="20" draggable="false">
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ABOUT-CLIENTS -->
-    <section class="about-clients">
-      <div class="about-clients__container container">
-        <div class="about-clients__inner">
-          <img src="img/icon.svg" alt="" width="54" height="24">
-          <h4 class="about-clients__title">Our Valued Clients</h4>
-          <p class="about-clients__text">
-            At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving
-          </p>
-        </div>
-
-        <div class="about-clients__list">
-          <!-- ITEM-1 -->
-          <div class="about-clients__item ">
-            <div class="about-clients__item-wrapper">
-              <div class="about-clients__item-inner">
-                <p class="about-clients__item-text-grey">Since 2019</p>
-                <div class="about-clients__item-heading">ABC Corporation</div>
-              </div>
-              <a class="about-clients__item-link button small-button" href="#">
-                Visit Website
+          <ul class="site-footer__bottom-list">
+            <li class="site-footer__bottom-item">
+              <a class="site-footer__bottom-item-a" href="#">
+                <img
+                  class="site-footer__bottom-icon"
+                  src="img/icon-facebook.svg"
+                  alt="icon-facebook"
+                  width="20"
+                  height="20"
+                  draggable="false" />
               </a>
-            </div>
-
-            <div class="about-clients__item-wrapper">
-              <div class="about-clients__item-wrapper2">
-                <div class="about-clients__item-smaller-text">Domain</div>
-                <div class="about-clients__item-text">Commercial Real Estate</div>
-              </div>
-              <div class="about-clients__item-wrapper2">
-                <div class="about-clients__item-smaller-text about-clients__item-smaller-text2">Category</div>
-                <div class="about-clients__item-text">Luxury Home Development</div>
-              </div>
-            </div>
-
-            <div class="about-clients__item-comment-wr">
-              <span class="about-clienst__heading">What They Said 🤗</span>
-              <p class="about-clients__comment">
-                Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.
-              </p>
-            </div>
-          </div>
-
-          <!-- ITEM-2 -->
-          <div class="about-clients__item">
-            <div class="about-clients__item-wrapper">
-              <div class="about-clients__item-inner">
-                <p class="about-clients__item-text-grey">Since 2018</p>
-                <div class="about-clients__item-heading">GreenTech Enterprises</div>
-              </div>
-              <a class="about-clients__item-link button small-button" href="#">
-                Visit Website
+            </li>
+            <li class="site-footer__bottom-item">
+              <a class="site-footer__bottom-item-a" href="#">
+                <img
+                  class="site-footer__bottom-icon"
+                  src="img/icon-linkedin.svg"
+                  alt="icon-linkedin"
+                  width="20"
+                  height="20"
+                  draggable="false" />
               </a>
-            </div>
-            <div class="about-clients__item-wrapper">
-              <div class="about-clients__item-wrapper2">
-                <div class="about-clients__item-smaller-text">Domain</div>
-                <div class="about-clients__item-text">Commercial Real Estate</div>
-              </div>
-              <div class="about-clients__item-wrapper2">
-                <div class="about-clients__item-smaller-text about-clients__item-smaller-text2">Category</div>
-                <div class="about-clients__item-text">Retail Space</div>
-              </div>
-            </div>
-            <div class="about-clients__item-comment-wr">
-              <span class="about-clienst__heading">What They Said 🤗</span>
-              <p class="about-clients__comment">
-                Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- BOTTOM -->
-        <div class="about-clients__bottom">
-          <button class="about-clients__bottom-img-wr" type="button">
-            <svg class="about-clients__bottom-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M20.4 12a.9.9 0 0 1-.9.9H6.735l4.99 4.751a.9.9 0 1 1-1.248 1.298l-6.6-6.3a.9.9 0 0 1 0-1.298l6.6-6.3a.9.9 0 1 1 1.247 1.298L6.734 11.1H19.5a.9.9 0 0 1 .9.9Z" clip-rule="evenodd"/></svg>
-          </button>
-
-          <div class="about-clients__bottom-inner">
-            <span class="about-clients__bottom-span">01</span>
-            <div class="about-clients__bottom-slesh">of</div>
-            <span class="about-clients__bottom-b">10</span>
-          </div>
-
-          <button class="about-clients__bottom-img-wr" type="button">
-            <svg class="about-clients__bottom-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M3.6 12a.9.9 0 0 1 .9-.9h12.765l-4.99-4.751a.9.9 0 1 1 1.248-1.298l6.6 6.3a.9.9 0 0 1 0 1.298l-6.6 6.3a.9.9 0 0 1-1.247-1.298l4.99-4.751H4.5a.9.9 0 0 1-.9-.9Z" clip-rule="evenodd"/></svg>
-          </button>
+            </li>
+            <li class="site-footer__bottom-item">
+              <a class="site-footer__bottom-item-a" href="#">
+                <img
+                  class="site-footer__bottom-icon"
+                  src="img/icon-twitter.svg"
+                  alt="icon-twitter"
+                  width="20"
+                  height="20"
+                  draggable="false" />
+              </a>
+            </li>
+            <li class="site-footer__bottom-item">
+              <a class="site-footer__bottom-item-a" href="#">
+                <img
+                  class="site-footer__bottom-icon"
+                  src="img/icon-youtube.svg"
+                  alt="icon-youtube"
+                  width="20"
+                  height="20"
+                  draggable="false" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- CTA -->
-    <section class="cta">
-      <div class="container cta__container">
-        <img src="img/icon.svg" alt="" width="54" height="24">
-        <h2 class="cta__heading">Start Your Real Estate Journey Today</h2>
-        <div class="cta__inner">
-          <p class="cta__text">
-            Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.
-          </p>
-          <a class="cta__button small-button" href="properties.html">Explore Properties</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- SITE-FOOTER -->
-  <footer class="site-footer">
-    <div class="container site-footer__container">
-      <div class="site-footer__inner">
-        <div class="site-footer__logo-input-wrapper">
-          <a class="site-footer__logo-wrapper" href="index.html">
-            <img class="site-footer__logo-icon" src="img/Logo.svg" alt="logo" width="113" height="34" draggable="false">
-          </a>
-          <form class="site-footer__form" action="https://htmlacademy.ru">
-            <input class="site-footer__input" type="email" placeholder="Enter Your Email" name="email">
-          </form>
-        </div>
-
-        <div class="site-footer__list-wrapper">
-
-          <div class="site-footer__list">
-            <span class="site-footer__list-title">Home</span>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Hero Section</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Features</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Properties</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Testimonials</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">FAQ's</a>
-            </div>
-          </div>
-
-          <div class="site-footer__list">
-            <span class="site-footer__list-title">About Us</span>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Our Story</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Our Works</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">How It Works</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Our Team</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Our Clients</a>
-            </div>
-          </div>
-
-          <div class="site-footer__list">
-            <span class="site-footer__list-title">Properties</span>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Portfolio</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Categories</a>
-            </div>
-          </div>
-
-          <div class="site-footer__list">
-            <span class="site-footer__list-title">Services</span>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Valuation Mastery</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Strategic Marketing</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Negotiation Wizardry</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Closing Success</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Property Management</a>
-            </div>
-          </div>
-
-          <div class="site-footer__list">
-            <span class="site-footer__list-title">Contact Us</span>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Contact Form</a>
-            </div>
-            <div class="site-footer__item">
-              <a class="site-footer__link" href="#">Our Offices</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- SITE-FOOTER-BOTTOM -->
-    <div class="site-footer__bottom container">
-      <div class="site-footer__bottom-wrapper">
-        <div class="site-footer__bottom-inner">
-          <a class="site-footer__bottom-author" href="#">@2023 Estatein. All Rights Reserved.</a>
-          <a class="site-footer__bottom-text" href="#">Terms & Conditions</a>
-        </div>
-
-        <ul class="site-footer__bottom-list">
-          <li class="site-footer__bottom-item">
-            <a class="site-footer__bottom-item-a" href="#">
-              <img class="site-footer__bottom-icon" src="img/icon-facebook.svg" alt="icon-facebook" width="20" height="20" draggable="false">
-            </a>
-          </li>
-          <li class="site-footer__bottom-item">
-            <a class="site-footer__bottom-item-a" href="#">
-              <img class="site-footer__bottom-icon" src="img/icon-linkedin.svg" alt="icon-linkedin" width="20" height="20" draggable="false">
-            </a>
-          </li>
-          <li class="site-footer__bottom-item">
-            <a class="site-footer__bottom-item-a" href="#">
-              <img class="site-footer__bottom-icon" src="img/icon-twitter.svg" alt="icon-twitter" width="20" height="20" draggable="false">
-            </a>
-          </li>
-          <li class="site-footer__bottom-item">
-            <a class="site-footer__bottom-item-a" href="#">
-              <img class="site-footer__bottom-icon" src="img/icon-youtube.svg" alt="icon-youtube" width="20" height="20" draggable="false">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
